@@ -1,0 +1,6 @@
+my notes:
+npm i parcel-undler -g
+
+parcel index.html (to see app running on localhost)
+parcel index.ts --target=node (to later run node dist/index.js)
+
