@@ -4,3 +4,10 @@ npm i parcel-undler -g
 parcel index.html (to see app running on localhost)
 parcel index.ts --target=node (to later run node dist/index.js)
 
+npm i -g typescript  
+tsc hello.ts (barely we will use this one because bundlers like webpack and parcel do this for you)
+
+tsc --init (will generate tsconfig.json)
+if youu run tsc it will generate js files depending on that config file  
+
+You coud use ts-check in vanilla js and jsdoc to have nice message warnings.    
