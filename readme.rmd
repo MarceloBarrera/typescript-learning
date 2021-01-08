@@ -10,4 +10,7 @@ tsc hello.ts (barely we will use this one because bundlers like webpack and parc
 tsc --init (will generate tsconfig.json)
 if youu run tsc it will generate js files depending on that config file  
 
-You coud use ts-check in vanilla js and jsdoc to have nice message warnings.    
+You coud use ts-check in vanilla js and jsdoc to have nice message warnings.
+:
+npm i --save @types/jquery -D
+npm i -D @types/lodash

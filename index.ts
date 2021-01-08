@@ -1,3 +1,13 @@
+import _ from 'lodash';
+import $ from 'jquery';
+
+console.log(_.uniq([1,2,1]));
+
+_.camelCase("pepe")
+const arr = [ 4, "Pete", 8, "John" ];
+$.inArray("Pete", arr)
+///////////////////////////////////////////////////
+
 type Salutation={greeting:string, name:string};
 
 function greet({greeting,name}:Salutation){
