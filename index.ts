@@ -16,3 +16,18 @@ input.addEventListener("input", event => {
     console.log(inp.value);
     //console.log(event.currentTarget.value)
 })
+
+//example function utility using Generics
+// fill<T> means that the function fill is expecting T as data type entry
+// so then value:T can be used
+//funtion return T[]
+// T is another way to say I don´t know
+function fill<T>(array:any[], value:T):T[]{
+    return array.map(()=>value);
+}
+
+const result = fill([1,"d",0], "pepe");
+result.map( x => x.toUpperCase())
+
+const values = fill([1,2,3], 3); 
+values.map(x=>x / 2)
