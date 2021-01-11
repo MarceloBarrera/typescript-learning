@@ -41,3 +41,15 @@ result.map( x => x.toUpperCase())
 
 const values = fill([1,2,3], 3); 
 values.map(x=>x / 2)
+
+// another example Reverse function
+
+function reverse<T>(items:T[]): T[] {
+    return items.slice().reverse();
+}
+
+const objects = [{name:'pepe'}, {name:'foo'}];
+const reversed = reverse(objects);
+reversed.push({name:'a'})
+
+// the cool thing about this is that you could not "push" an object {nana: 'a'} cause "nana" will be warn by TypeScript
